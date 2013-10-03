@@ -188,19 +188,17 @@ footer {
 }
 
 #related {
-    display: visible;
+    display: block;
   }
 
-#post-next  {
-  float: right;
-}
-
-#post-prev  {
+#post-prev, #post-next  {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 #navigation  {
+  display: block;
   margin-bottom: 10px;
-  width: 110px;
 }
 
 #disqus_thread {

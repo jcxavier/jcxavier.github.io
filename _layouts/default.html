@@ -13,23 +13,10 @@ layout: base
         <li><span>{{ post.date | date: "%Y.%m.%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
   </ul>
-
 </header>
 
 <section>
-  
   {{ content }}
-
 </section>
 
-<script type="text/javascript">
-  function onResize() {
-      var width = window.innerWidth;
-      if (width > 960) {
-        var height = window.innerHeight;
-        document.getElementById("posts").style.height = ((height - 500) + "px");
-      }
-  }
-  window.onresize=onResize;
-  onResize();
-</script>
+<script>function c(){var e=window.innerWidth;if(e>960){var t=window.innerHeight;document.getElementById("posts").style.height=t-500+"px"}}window.onresize=c;c()</script>
