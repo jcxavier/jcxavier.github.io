@@ -4,4 +4,4 @@ rdiscount:
 
 permalink: pretty
 pygments: true
-lsi: true
+lsi: false

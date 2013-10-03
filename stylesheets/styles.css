@@ -191,6 +191,18 @@ footer {
     display: visible;
   }
 
+#post-next  {
+  float: right;
+}
+
+#post-prev  {
+}
+
+#navigation  {
+  margin-bottom: 10px;
+  width: 110px;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
