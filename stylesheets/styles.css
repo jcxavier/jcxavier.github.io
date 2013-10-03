@@ -203,6 +203,20 @@ footer {
   width: 110px;
 }
 
+#disqus_thread {
+  margin-top: 50px;
+}
+
+#share {
+  display: block;
+  width: auto;
+}
+
+#share a, #share div {
+  margin: 0;
+  padding: 0;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
