@@ -187,6 +187,10 @@ footer {
   bottom:50px;
 }
 
+#related {
+    display: visible;
+  }
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
@@ -204,6 +208,9 @@ footer {
   header {
     padding-right:320px;
   } */
+  #related {
+    display: none;
+  }
 
   #posts {
     max-height: 250px;

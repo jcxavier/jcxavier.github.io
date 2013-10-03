@@ -1,114 +1,35 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }}</title>
+---
+layout: base
+---
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body onresize="onResize()">
-    <div class="wrapper">
-      <header>
-        <h1>jcxavier.com</h1>
-        <p>never gonna give you up</p>
+<header>
+  <a href="/"><h1>jcxavier.com</h1></a>
+  <p>never gonna give you up</p>
 
-        <p><img src="http://en.gravatar.com/userimage/15947556/9fdf6e642a5f9d0347f84e05c12acf04.jpg?size=160"/></p>
+  <p><a href="/"><img src="http://en.gravatar.com/userimage/15947556/9fdf6e642a5f9d0347f84e05c12acf04.jpg?size=160"/></a></p>
 
-        {{ content }}
- 
-      </header>
-    
-      <section>
-        <h3>
-<a name="welcome" class="anchor" href="#welcome"><span class="octicon octicon-link"></span></a>Welcome</h3>
+  <ul id="posts">
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date: "%Y.%m.%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+  </ul>
 
-<p>My name is <b>João Xavier</b> and this is my new website, so hey, have fun.</p>
+</header>
 
-<h3>
-<a name="what-i-am" class="anchor" href="#what-i-am"><span class="octicon octicon-link"></span></a>What I am</h3>
+<section>
+  
+  {{ content }}
 
-<p>An aspiring <b>game developer</b> taking my first steps @ <a href="http://www.gameduell.com">GameDuell</a>.</p>
+</section>
 
-<p>Android and iOS developer.</p>
-
-<p>Guitar and drums player.</p>
-
-<h3>
-<a name="where-i-am" class="anchor" href="#where-i-am"><span class="octicon octicon-link"></span></a>Where I am</h3>
-
-<p>In <b>Berlin, Germany</b> since August 2013. And in the social networks on the left bar. Or bottom bar.</p>
-
-
-<h3>
-<a name="bio" class="anchor" href="#bio"><span class="octicon octicon-link"></span></a>Bio</h3>
-
-<p>Born in Porto, Portugal in 1989. Master in Informatics and Computing Engineering at <a href="http://www.fe.up.pt">Faculdade de Engenharia da Universidade do Porto</a> since 2011.</p>
-
-<p>Fiddling, creating things, programming, games, geekness. I'm fond of them them, I get along with them. Specially together with a cup of coffee. Or two.</p>
-
-<p>Music. Doing it since I was 6, can't get enough of it. First piano, then guitar and, more recently, drums. Give me a good concert or a good jam session.</p>
-
-<p>Travel, people, friends, ERASMUS, CouchSurfing. Been in 35 countries and counting. A reason to live for.</p>
-
-
-<h3>
-<a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>Projects</h3>
-
-<p>Under <a href="https://github.com/jcxavier" class="user-mention">@jcxavier</a> you can find quite some. Some others in <a href="http://www.linkedin.com/in/jcxavier">LinkedIn</a>. Some other ones might be here soon. Go crazy!</p>
-
-<h3>
-<a name="subscribe" class="anchor" href="#subscribe"><span class="octicon octicon-link"></span></a>Subscribe</h3>
-
-<p>If you want to keep up with the updates, click in the magic link that will appear here when the subscription page is ready.</p>
-   
-      </section>
-      <footer>
-
-        <a href="http://twitter.com/cristopt"><img src="images/twitter.png" /></a>
-        <a href="http://www.linkedin.com/in/jcxavier"><img src="images/linkedin.png" /></a>
-        <a href="http://github.com/jcxavier"><img src="images/github.png" /></a>
-        <a href="http://stackoverflow.com/users/1062290/jcxavier"><img src="images/stackoverflow.png" /></a>
-        <a href="http://plus.google.com/108095146358697729538"><img src="images/googleplusalt.png" /></a>
-        <a href="http://www.lastfm.com/user/CristoPT"><img src="images/lastfm.png" /></a>
-        <a href="http://www.youtube.com/user/cristopt"><img src="images/youtube.png" /></a>
-
-
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("AIzaSyAwR7yKD-3M8RijAi8v7_evuB0MRwKsEU4");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-              <script type="text/javascript">
-      function onResize() {
-          var width = window.innerWidth;
-
-          /*if (width > 720 && width <= 960) {
-            document.getElementById("posts").style.height = "250px";
-            
-          } */if (width > 960) {
-            var height = window.innerHeight;
-            document.getElementById("posts").style.height = ((height - 500) + "px");
-          }
-          
+<script type="text/javascript">
+  function onResize() {
+      var width = window.innerWidth;
+      if (width > 960) {
+        var height = window.innerHeight;
+        document.getElementById("posts").style.height = ((height - 500) + "px");
       }
-      onResize();
-    </script>
-
-  </body>
-</html>
+  }
+  window.onresize=onResize;
+  onResize();
+</script>
