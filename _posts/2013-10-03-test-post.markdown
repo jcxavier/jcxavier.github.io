@@ -1,0 +1,6 @@
+---
+layout: post
+title: Test post
+---
+
+If you see this, congratulations, you are now in the jcxavier.com closed beta blog.
