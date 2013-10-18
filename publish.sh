@@ -43,8 +43,8 @@ select opt in $POSTS; do
    sed -e "s/^time: .*$/time: `date +%H:%M:%S`/g" -i '' "$NEWT"
 
    # Commit Like a boss.
-   echo "git ci $opt $NEWT -m \"Publishing $NEWT.\"";
-   git ci $opt $NEWT -m "Publishing $NEWT."
+   echo "git commit $opt $NEWT -m \"Publishing $NEWT.\"";
+   git commit $opt $NEWT -m "Publishing $NEWT."
 
    exit 0;
 done;

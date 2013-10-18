@@ -27,4 +27,3 @@ They also serve mean cups of coffee and pieces of cake! I found that there have 
 ![image of St. Oberholz](http://s3.unlike.net.s3.amazonaws.com/photos/0000/1807/Sankt-Oberholz-005.jpg)
 
 So, enough for a quick intro. If you are nearby, be sure to stop there, it's worth it. It's open every day until midnight and on Fridays and Saturdays until 2 AM! You can also have your regular beer there.
-
