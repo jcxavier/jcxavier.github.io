@@ -16,7 +16,7 @@ The second one is I was inspired to share impressions about living in Germany an
 
 Two of my friends who are out there in their adventures have started one and inspired me for doing the same. Actually I would recommend checking them out! Here's [Filipe's website](filipearaujoribeiro.com), who's on a career break, and [André's London blog](http://andre-nascimento.com/london/).
 
-I've also provided an option to subscribe for weekly updates, which you can find back at the [main page](www.jcxavier.com).
+I've also provided an option to subscribe for weekly updates, which you can find back at the [main page](http://www.jcxavier.com).
 
 ##### St. Oberholz
 
