@@ -1,7 +1,4 @@
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]
-
+markdown: kramdown
 permalink: pretty
-pygments: true
+highlighter: rouge
 lsi: true
